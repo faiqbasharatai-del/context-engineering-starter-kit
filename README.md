@@ -51,7 +51,7 @@ Context engineering is the discipline of curating what's on the whiteboard at an
 Drop these into the root of any project Claude Code opens:
 
 ```bash
-git clone https://github.com/USERNAME/context-engineering-starter-kit.git
+git clone https://github.com/faiqbasharatai-del/context-engineering-starter-kit.git
 cp context-engineering-starter-kit/CLAUDE.md ./CLAUDE.md
 cp -r context-engineering-starter-kit/skills ./.claude/skills
 ```
