@@ -31,7 +31,9 @@ Context engineering is the discipline of curating what's on the whiteboard at an
 
 - **Keep it lean** — a tight `CLAUDE.md`, not a novel.
 - **Keep it fresh** — compact or restart before rot sets in.
-- **Keep it isolated** — push heavy, one-off work into subagents and skills so it never pollutes your main session.
+- **Keep it isolated** — push heavy, one-off work into subagents (see the `research` skill) so it never pollutes your main session.
+
+![Bloated context vs engineered context](assets/bloated-vs-engineered.png)
 
 ---
 
@@ -42,6 +44,7 @@ Context engineering is the discipline of curating what's on the whiteboard at an
 | `CLAUDE.md` | An annotated, context-lean memory template. Copy it, fill it in, delete the notes. |
 | `CONTEXT-HYGIENE.md` | The decision rules: when to compact, when to start fresh, when to dispatch a subagent. |
 | `skills/context-check/SKILL.md` | A `/context-check` routine that reads your current session and flags bloat before it bites. |
+| `skills/research/SKILL.md` | Dispatches a subagent to do heavy reading in an isolated context and report back only the answer — the raw bytes never rot your main session. |
 | `templates/memory-template.md` | A single-fact memory file format for persistent, low-cost recall across sessions. |
 
 ---

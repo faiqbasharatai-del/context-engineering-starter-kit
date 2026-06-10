@@ -26,7 +26,7 @@ New task = new whiteboard. Carrying a finished task's context into a new one is 
 
 Reading 40 files to answer one question? Scanning a giant log? Don't do it in your main session — the raw bytes will sit in your context for the rest of the day. Send a subagent to do the reading and report back only the answer. The heavy lifting happens in an isolated context that gets thrown away. Your main session only ever sees the conclusion.
 
-This is the most underused move and the highest-leverage one. Most "my AI got dumber" sessions are really "I read three log files into my context and never cleared them."
+This is the most underused move and the highest-leverage one. Most "my AI got dumber" sessions are really "I read three log files into my context and never cleared them." The `research` skill in this kit does exactly this — point it at the heavy read and it brings back only the answer.
 
 ## What to keep OUT of the main window
 
