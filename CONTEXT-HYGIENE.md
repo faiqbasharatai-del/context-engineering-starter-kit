@@ -2,6 +2,8 @@
 
 The whole game is keeping the right things on the whiteboard and the wrong things off it. Here are the decision rules. Memorise the three signals and the three moves.
 
+> Don't want to memorise anything? The kit enforces these rules for you: the statusline shows which zone you're in, the read-guard hook blocks the classic mistake, and `/context-check` applies this whole document to your live session. Start with `node .claude/tools/context-audit.js` to see what every session already costs you.
+
 ## The three signals that rot is setting in
 
 1. The model starts **ignoring instructions** you gave earlier in the session.
