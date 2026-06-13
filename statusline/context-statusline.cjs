@@ -13,7 +13,7 @@
  *   > 70%  ROT RISK       compact or start fresh now
  *
  * Register in .claude/settings.json:
- *   { "statusLine": { "type": "command", "command": "node .claude/statusline/context-statusline.js" } }
+ *   { "statusLine": { "type": "command", "command": "node .claude/statusline/context-statusline.cjs" } }
  */
 
 let raw = "";

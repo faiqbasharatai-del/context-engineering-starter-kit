@@ -35,9 +35,9 @@ You can't fix 2, 3, or 4. You can fix 1 completely. That's what this kit is for.
 
 | Job | Tool | What it does |
 |---|---|---|
-| **Measure** | `tools/context-audit.js` | Scans your project and reports the **session tax** — what loads into context on *every single message*: `CLAUDE.md`, everything it `@`-imports, every rule file, every skill's frontmatter. Grades it A–F and tells you exactly what to trim. Most people have never seen this number. |
-| **Watch** | `statusline/context-statusline.js` | A live context meter in your status bar: `CTX 82k/200k 41% [####------] FRESH`. You see rot coming instead of noticing it twenty sloppy messages later. |
-| **Guard** | `hooks/large-read-guard.js` | A PreToolUse hook that physically stops oversized files from being read into your main context — and tells the model the right move instead (slice it, grep it, or send a subagent). Rot prevention, enforced in code. |
+| **Measure** | `tools/context-audit.cjs` | Scans your project and reports the **session tax** — what loads into context on *every single message*: `CLAUDE.md`, everything it `@`-imports, every rule file, every skill's frontmatter. Grades it A–F and tells you exactly what to trim. Most people have never seen this number. |
+| **Watch** | `statusline/context-statusline.cjs` | A live context meter in your status bar: `CTX 82k/200k 41% [####------] FRESH`. You see rot coming instead of noticing it twenty sloppy messages later. |
+| **Guard** | `hooks/large-read-guard.cjs` | A PreToolUse hook that physically stops oversized files from being read into your main context — and tells the model the right move instead (slice it, grep it, or send a subagent). Rot prevention, enforced in code. |
 | **Diagnose** | `skills/context-check` | `/context-check` combines the audit's hard numbers with a judgment read of the live session: what's clogging the window, how bad the rot risk is, and the one move to make (compact / fresh / subagent). |
 | **Isolate** | `skills/research` | `/research` dispatches a subagent to do heavy reading in its own disposable context and report back **only the answer**. The 40 files never touch your session. |
 
@@ -78,8 +78,10 @@ Then merge `hooks/settings-snippet.json` into your project's `.claude/settings.j
 Try it immediately:
 
 ```bash
-node .claude/tools/context-audit.js        # what does every session cost you?
+node .claude/tools/context-audit.cjs       # what does every session cost you?
 ```
+
+(The scripts ship as `.cjs` so they run identically whether or not your project's `package.json` declares `"type": "module"`.)
 
 …and run `/context-check` inside Claude Code whenever a session starts feeling foggy.
 

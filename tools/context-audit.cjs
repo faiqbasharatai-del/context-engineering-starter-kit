@@ -8,7 +8,7 @@
  * out of the model's working memory on EVERY message. This script measures it.
  *
  * Usage:
- *   node context-audit.js [projectDir] [--json]
+ *   node context-audit.cjs [projectDir] [--json]
  *
  * Zero dependencies. Node 18+. Token counts are estimates (chars / 4).
  */

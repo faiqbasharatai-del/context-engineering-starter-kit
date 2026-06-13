@@ -13,7 +13,7 @@
  *
  * Register in .claude/settings.json:
  *   { "hooks": { "PreToolUse": [ { "matcher": "Read",
- *     "hooks": [ { "type": "command", "command": "node .claude/hooks/large-read-guard.js" } ] } ] } }
+ *     "hooks": [ { "type": "command", "command": "node .claude/hooks/large-read-guard.cjs" } ] } ] } }
  *
  * Tune with env var CONTEXT_GUARD_KB (default 100 — roughly 25k tokens).
  * Fails open: any error allows the read.

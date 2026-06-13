@@ -2,7 +2,7 @@
   "_comment": "Merge these keys into your project's .claude/settings.json (or settings.local.json). The hook denies oversized Reads with a teaching message; the statusline shows live context usage. Both assume the kit is installed under .claude/.",
   "statusLine": {
     "type": "command",
-    "command": "node .claude/statusline/context-statusline.js"
+    "command": "node .claude/statusline/context-statusline.cjs"
   },
   "hooks": {
     "PreToolUse": [
@@ -11,7 +11,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "node .claude/hooks/large-read-guard.js"
+            "command": "node .claude/hooks/large-read-guard.cjs"
           }
         ]
       }

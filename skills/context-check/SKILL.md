@@ -11,9 +11,9 @@ A fast health read on the current session's context. Run it the moment things fe
 
 When invoked, produce a short report — no more than 20 lines — covering:
 
-1. **The measured tax (run the tool).** If `.claude/tools/context-audit.js` exists in the project, run:
+1. **The measured tax (run the tool).** If `.claude/tools/context-audit.cjs` exists in the project, run:
    ```
-   node .claude/tools/context-audit.js --json
+   node .claude/tools/context-audit.cjs --json
    ```
    Report the session-tax grade and the single biggest always-loaded offender. This is the *static* cost — what every message pays before the conversation even starts. If the tool isn't installed, say so in one line and skip to step 2.
 
